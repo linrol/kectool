@@ -30,7 +30,7 @@ dependencies {
     implementation ("org.jdom:jdom2:2.0.6.1")
     implementation ("com.squareup.okhttp3:okhttp:3.1.0")
     implementation ("org.gitlab4j:gitlab4j-api:4.17.0")
-    implementation ("com.opencsv:opencsv:5.5.2")
+    // implementation ("com.opencsv:opencsv:5.5.2")
     // implementation ("com.google.cloud:google-cloud-translate:2.43.0")
     // implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10")
 }

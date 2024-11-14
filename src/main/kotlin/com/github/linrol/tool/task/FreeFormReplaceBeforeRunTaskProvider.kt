@@ -1,6 +1,5 @@
 package com.github.linrol.tool.task
 
-import com.github.linrol.tool.lang.ClearLangAction
 import com.github.linrol.tool.model.GitCmd
 import com.github.linrol.tool.utils.GitLabUtil
 import com.intellij.execution.BeforeRunTaskProvider
@@ -24,7 +23,7 @@ import javax.swing.Icon
 class FreeFormReplaceBeforeRunTaskProvider : BeforeRunTaskProvider<FreeFormReplaceBeforeRunTask>() {
 
     companion object {
-        private val logger = logger<ClearLangAction>()
+        private val logger = logger<FreeFormReplaceBeforeRunTaskProvider>()
     }
 
     override fun getId(): Key<FreeFormReplaceBeforeRunTask> {

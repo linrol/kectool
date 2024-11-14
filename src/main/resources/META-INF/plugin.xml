@@ -53,13 +53,6 @@
             <add-to-group group-id="Vcs.Push.Actions" anchor="after" relative-to-action="Vcs.Push.Force"/>
         </action>
 
-        <!-- Push And Ops Build -->
-        <action id="com.github.linrol.tool.branch.trigger.OpsBuildAfterPushAction" class="com.github.linrol.tool.branch.trigger.OpsBuildAfterPushAction"
-                text="Push And Ops Build"
-                description="Push and ops build">
-            <add-to-group group-id="Vcs.Push.Actions" anchor="after" relative-to-action="com.github.linrol.tool.branch.merge.request.MergeRequestAction"/>
-        </action>
-
         <!-- Local Common Merge -->
         <action id="com.github.linrol.tool.branch.merge.local.CommonMergeAction" class="com.github.linrol.tool.branch.merge.local.CommonMergeAction"
                 text="Common Merge"
@@ -73,56 +66,6 @@
         <action id="com.github.linrol.tool.branch.update.UpdateAction" class="com.github.linrol.tool.branch.update.UpdateAction"
                 text="Update"
                 description="Update remote to local">
-        </action>
-
-        <!-- Protect Remote Branch -->
-        <action id="com.github.linrol.tool.branch.protect.ProtectBranchAction" class="com.github.linrol.tool.branch.protect.ProtectBranchAction"
-                text="Protect Branch"
-                description="Multi project branch protect"
-                icon="AllIcons.Nodes.Protected">
-            <add-to-group group-id="com.github.linrol.tool.kectoolGroup" anchor="after"
-                          relative-to-action="com.github.linrol.tool.branch.commit.CommitMergeRequestAction"/>
-        </action>
-
-        <!-- Delete Branch -->
-        <action id="com.github.linrol.tool.branch.delete.DeleteBranchAction" class="com.github.linrol.tool.branch.delete.DeleteBranchAction"
-                text="Delete Branch"
-                description="Multi project branch delete"
-                icon="/icons/delete.svg">
-            <add-to-group group-id="com.github.linrol.tool.kectoolGroup" anchor="after"
-                          relative-to-action="com.github.linrol.tool.branch.protect.ProtectBranchAction"/>
-        </action>
-
-        <!-- Front Init-Data Version Sync -->
-        <action id="com.github.linrol.tool.branch.version.FrontVersionSyncAction" class="com.github.linrol.tool.branch.version.FrontVersionSyncAction"
-                text="Front Version Sync"
-                description="Front init-data version sync"
-                icon="AllIcons.Actions.SyncPanels">
-            <add-to-group group-id="com.github.linrol.tool.kectoolGroup" anchor="last"/>
-        </action>
-
-        <action id="com.github.linrol.tool.lang.FrontLangAction" class="com.github.linrol.tool.lang.FrontLangAction"
-                text="前端多语翻译"
-                icon="/icons/transient.svg">
-            <add-to-group group-id="UsageView.Popup" anchor="first"/>   <!-- 搜索结果中的右键菜单 -->
-            <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
-                          relative-to-action="com.github.linrol.tool.kectoolGroup"/>  <!-- 项目结构的右键菜单 -->
-        </action>
-
-        <action id="com.github.linrol.tool.lang.BackendLangAction" class="com.github.linrol.tool.lang.BackendLangAction"
-                text="后端多语翻译"
-                icon="/icons/transient.svg">
-            <add-to-group group-id="UsageView.Popup" anchor="first"/>   <!-- 搜索结果中的右键菜单 -->
-            <add-to-group group-id="EditorPopupMenu" anchor="first"/>   <!-- 代码中的右键菜单 -->
-            <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
-                          relative-to-action="com.github.linrol.tool.lang.FrontLangAction"/>  <!-- 项目结构的右键菜单 -->
-        </action>
-
-        <action id="com.github.linrol.tool.lang.ClearLangAction" class="com.github.linrol.tool.lang.ClearLangAction"
-                text="清空多语翻译"
-                icon="/icons/clearOutputs.svg">
-            <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
-                          relative-to-action="com.github.linrol.tool.lang.BackendLangAction"/>
         </action>
     </actions>
 </idea-plugin>
