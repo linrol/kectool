@@ -6,6 +6,7 @@ import com.github.linrol.tool.utils.GitLabUtil
 import com.intellij.execution.BeforeRunTaskProvider
 import com.intellij.execution.configurations.RunConfiguration
 import com.intellij.execution.runners.ExecutionEnvironment
+import com.intellij.icons.AllIcons.Actions.Replace
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.actionSystem.DataContext
 import com.intellij.openapi.diagnostic.logger
@@ -31,11 +32,11 @@ class FreeFormReplaceBeforeRunTaskProvider : BeforeRunTaskProvider<FreeFormRepla
     }
 
     override fun getName(): @Nls(capitalization = Nls.Capitalization.Title) String {
-        return "Freeform Properties File Replacement Task"
+        return "Freeform Properties Replace Task"
     }
 
-    override fun getIcon(): Icon? {
-        return null // 可以提供自定义图标
+    override fun getIcon(): Icon {
+        return Replace // 可以提供自定义图标
     }
 
     override fun createTask(runConfiguration: RunConfiguration): FreeFormReplaceBeforeRunTask {
