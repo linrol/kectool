@@ -21,7 +21,7 @@
                 id="org.intellij.sdk.settings.AppSettingsConfigurable"
                 displayName="Kectool Settings"/>
         <applicationService serviceImplementation="com.github.linrol.tool.state.ToolSettingsState"/>
-        <toolWindow id="kectool" canCloseContents="false" anchor="bottom" factoryClass="com.github.linrol.tool.console.ToolWindowFactory"/>
+        <toolWindow id="Kectool" canCloseContents="false" anchor="bottom" factoryClass="com.github.linrol.tool.console.ToolWindowFactory"/>
 
         <projectService serviceInterface="com.intellij.openapi.vcs.AbstractVcsHelper" serviceImplementation="com.github.linrol.tool.extend.vcs.AbstractVcsHelperImplEx" overrides="true"/>
 

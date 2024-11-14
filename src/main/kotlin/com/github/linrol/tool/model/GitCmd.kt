@@ -94,7 +94,7 @@ class GitCmd(private var project: Project, private var repository: GitRepository
         fun log(p: Project?, msg: String, activate: Boolean) {
             try {
                 val project = p ?: ProjectManager.getInstance().defaultProject
-                val toolWindow = ToolWindowManager.getInstance(project).getToolWindow("kectool") ?: return
+                val toolWindow = ToolWindowManager.getInstance(project).getToolWindow("Kectool") ?: return
                 ApplicationManager.getApplication().invokeLater {
                     if (activate) {
                         toolWindow.activate {
